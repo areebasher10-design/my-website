@@ -536,6 +536,7 @@ a.card:hover, .card-hover:hover { transform: translateY(-3px); box-shadow: var(-
 .price-amount { font-size: clamp(2.6rem, 2rem + 2vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
 .price-unit { font-weight: 650; color: var(--muted); }
 .price-card p { color: var(--muted); }
+.price-card .price { color: var(--navy); }
 .price-card .btn { margin-top: auto; }
 .price-card .check-list { margin-bottom: 26px; }
 .price-notes { max-width: 960px; margin: 28px auto 0; }
