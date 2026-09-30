@@ -1,0 +1,147 @@
+<!--meta
+{
+  "title": "Contact Property Link Partners | Book a Discovery Call",
+  "description": "Book a discovery call about real estate VA services, discuss selling a property, or submit your investor buying criteria to Property Link Partners.",
+  "nav": "contact"
+}
+-->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="{{base}}">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+        <p class="eyebrow">Contact</p>
+        <h1 id="page-heading">How Can We Help?</h1>
+        <p class="lead">Choose the inquiry that fits. Each form asks only for what we need to respond.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" style="padding-top:0" aria-label="Inquiry forms">
+      <div class="container container-narrow">
+        <div class="tabs" role="tablist" aria-label="Inquiry type" data-tabs>
+          <button class="tab" type="button" role="tab" id="tab-va" aria-controls="va-inquiry" aria-selected="true">VA services</button>
+          <button class="tab" type="button" role="tab" id="tab-owner" aria-controls="owner-inquiry" aria-selected="false" tabindex="-1">Property owners</button>
+          <button class="tab" type="button" role="tab" id="tab-investor" aria-controls="investor-inquiry" aria-selected="false" tabindex="-1">Investor buyers</button>
+        </div>
+
+        <!-- VA service inquiry -->
+        <div class="form-panel tab-panel" id="va-inquiry" role="tabpanel" aria-labelledby="tab-va">
+          <h2>Book a Discovery Call</h2>
+          <p class="muted">Tell us about your business and campaign. We'll follow up to schedule a call and discuss schedule, scope, and data.</p>
+          <form data-form="va" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="va-name">Name <span class="req" aria-hidden="true">*</span></label><input id="va-name" name="name" type="text" autocomplete="name" required aria-describedby="va-name-err"><p class="field-error" id="va-name-err"></p></div>
+              <div class="field"><label for="va-company">Company <span class="opt">(optional)</span></label><input id="va-company" name="company" type="text" autocomplete="organization"></div>
+              <div class="field"><label for="va-email">Email <span class="req" aria-hidden="true">*</span></label><input id="va-email" name="email" type="email" autocomplete="email" required aria-describedby="va-email-err"><p class="field-error" id="va-email-err"></p></div>
+              <div class="field"><label for="va-phone">Phone <span class="opt">(optional)</span></label><input id="va-phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="va-type">Business type <span class="req" aria-hidden="true">*</span></label>
+                <select id="va-type" name="business_type" required aria-describedby="va-type-err" data-required-msg="Select your business type.">
+                  <option value="">Select one</option>
+                  <option>Real estate investor</option>
+                  <option>Realtor / real estate agent</option>
+                  <option>Real estate wholesaler</option>
+                  <option>Real estate broker</option>
+                  <option>Property acquisition team</option>
+                  <option>Other</option>
+                </select><p class="field-error" id="va-type-err"></p></div>
+              <div class="field"><label for="va-market">Target market <span class="req" aria-hidden="true">*</span></label><input id="va-market" name="target_market" type="text" placeholder="e.g. Cities, counties, or states" required aria-describedby="va-market-err"><p class="field-error" id="va-market-err"></p></div>
+              <fieldset class="field full"><legend>Preferred schedule</legend>
+                <div class="choice-group">
+                  <label class="choice"><input type="radio" name="preferred_schedule" value="5-hour daily"><span>5-hour daily</span></label>
+                  <label class="choice"><input type="radio" name="preferred_schedule" value="8-hour daily"><span>8-hour daily</span></label>
+                  <label class="choice"><input type="radio" name="preferred_schedule" value="Not sure yet"><span>Not sure yet</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="field full"><legend>Data preference</legend>
+                <div class="choice-group">
+                  <label class="choice"><input type="radio" name="data_preference" value="I will provide skip-traced data"><span>I'll provide skip-traced data</span></label>
+                  <label class="choice"><input type="radio" name="data_preference" value="Discuss skip tracing support"><span>Discuss skip tracing support</span></label>
+                  <label class="choice"><input type="radio" name="data_preference" value="Not sure yet"><span>Not sure yet</span></label>
+                </div>
+              </fieldset>
+              <div class="field full"><label for="va-req">Campaign requirements <span class="opt">(optional)</span></label><p class="hint" id="va-req-hint">Target niches, services needed, CRM, goals, or anything else we should know.</p><textarea id="va-req" name="campaign_requirements" aria-describedby="va-req-hint"></textarea></div>
+              <div class="hp-field" aria-hidden="true"><label for="va-website">Website</label><input id="va-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+              <div class="full"><label class="consent"><input type="checkbox" name="marketing_consent" value="yes"><span>Optional: send me occasional updates from Property Link Partners. You can unsubscribe at any time.</span></label></div>
+            </div>
+            <div class="form-foot mt-3">
+              <button class="btn btn-primary" type="submit">Send VA Inquiry</button>
+              <p class="form-privacy">We use this information to respond to your inquiry and discuss your campaign. See our <a href="{{base}}privacy/">Privacy Policy</a>.</p>
+            </div>
+            <div class="form-status" data-form-status role="status"></div>
+          </form>
+        </div>
+
+        <!-- Property owner inquiry -->
+        <div class="form-panel tab-panel" id="owner-inquiry" role="tabpanel" aria-labelledby="tab-owner">
+          <h2>Discuss a Property</h2>
+          <p class="muted">Share a few details about your property. There's no obligation to accept an offer or continue the conversation. This form is for Property Link Partners' own wholesaling activity.</p>
+          <form data-form="owner" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="ow-name">Name <span class="req" aria-hidden="true">*</span></label><input id="ow-name" name="name" type="text" autocomplete="name" required aria-describedby="ow-name-err"><p class="field-error" id="ow-name-err"></p></div>
+              <div class="field"><label for="ow-email">Email <span class="req" aria-hidden="true">*</span></label><input id="ow-email" name="email" type="email" autocomplete="email" required aria-describedby="ow-email-err"><p class="field-error" id="ow-email-err"></p></div>
+              <div class="field"><label for="ow-phone">Phone <span class="opt">(optional)</span></label><input id="ow-phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="ow-location">Property location <span class="req" aria-hidden="true">*</span></label><input id="ow-location" name="property_location" type="text" placeholder="Street address, or city and state" required aria-describedby="ow-location-err"><p class="field-error" id="ow-location-err"></p></div>
+              <div class="field full"><label for="ow-msg">Message about the property <span class="opt">(optional)</span></label><textarea id="ow-msg" name="message"></textarea></div>
+              <div class="hp-field" aria-hidden="true"><label for="ow-website">Website</label><input id="ow-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+              <div class="full"><label class="consent"><input type="checkbox" name="marketing_consent" value="yes"><span>Optional: send me occasional updates from Property Link Partners. You can unsubscribe at any time.</span></label></div>
+            </div>
+            <div class="form-foot mt-3">
+              <button class="btn btn-primary" type="submit">Send Property Inquiry</button>
+              <p class="form-privacy">We use this information to respond about your property. See our <a href="{{base}}privacy/">Privacy Policy</a>.</p>
+            </div>
+            <div class="form-status" data-form-status role="status"></div>
+          </form>
+        </div>
+
+        <!-- Investor buyer inquiry -->
+        <div class="form-panel tab-panel" id="investor-inquiry" role="tabpanel" aria-labelledby="tab-investor">
+          <h2>Submit Investor Buying Criteria</h2>
+          <p class="muted">Tell us what you buy. We'll contact you about opportunities that may match. Sharing criteria doesn't commit you to anything.</p>
+          <form data-form="investor" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="iv-name">Name <span class="req" aria-hidden="true">*</span></label><input id="iv-name" name="name" type="text" autocomplete="name" required aria-describedby="iv-name-err"><p class="field-error" id="iv-name-err"></p></div>
+              <div class="field"><label for="iv-company">Company <span class="opt">(optional)</span></label><input id="iv-company" name="company" type="text" autocomplete="organization"></div>
+              <div class="field"><label for="iv-email">Email <span class="req" aria-hidden="true">*</span></label><input id="iv-email" name="email" type="email" autocomplete="email" required aria-describedby="iv-email-err"><p class="field-error" id="iv-email-err"></p></div>
+              <div class="field"><label for="iv-phone">Phone <span class="opt">(optional)</span></label><input id="iv-phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field full"><label for="iv-locations">Target locations <span class="req" aria-hidden="true">*</span></label><input id="iv-locations" name="target_locations" type="text" placeholder="e.g. Cities, counties, or ZIP codes" required aria-describedby="iv-locations-err"><p class="field-error" id="iv-locations-err"></p></div>
+              <fieldset class="field full"><legend>Property types</legend>
+                <div class="choice-group">
+                  <label class="choice"><input type="checkbox" name="property_types" value="Single-family"><span>Single-family</span></label>
+                  <label class="choice"><input type="checkbox" name="property_types" value="Small multifamily"><span>Small multifamily</span></label>
+                  <label class="choice"><input type="checkbox" name="property_types" value="Vacant land"><span>Vacant land</span></label>
+                  <label class="choice"><input type="checkbox" name="property_types" value="Commercial"><span>Commercial</span></label>
+                  <label class="choice"><input type="checkbox" name="property_types" value="Other"><span>Other</span></label>
+                </div>
+              </fieldset>
+              <div class="field"><label for="iv-price">Price range <span class="opt">(optional)</span></label><input id="iv-price" name="price_range" type="text" placeholder="e.g. $80k–$200k"></div>
+              <div class="field"><label for="iv-condition">Condition preferences <span class="opt">(optional)</span></label><input id="iv-condition" name="condition_preferences" type="text" placeholder="e.g. Light rehab, full rehab"></div>
+              <div class="field"><label for="iv-strategy">Investment strategy <span class="opt">(optional)</span></label>
+                <select id="iv-strategy" name="investment_strategy">
+                  <option value="">Select one</option>
+                  <option>Fix and flip</option>
+                  <option>Buy and hold rental</option>
+                  <option>BRRRR</option>
+                  <option>New construction / development</option>
+                  <option>Other</option>
+                </select></div>
+              <div class="field"><label for="iv-timeline">Buying timeline <span class="opt">(optional)</span></label>
+                <select id="iv-timeline" name="buying_timeline">
+                  <option value="">Select one</option>
+                  <option>Actively buying now</option>
+                  <option>Within 3 months</option>
+                  <option>3–12 months</option>
+                  <option>Just exploring</option>
+                </select></div>
+              <div class="field full"><label for="iv-notes">Anything else? <span class="opt">(optional)</span></label><textarea id="iv-notes" name="notes"></textarea></div>
+              <div class="hp-field" aria-hidden="true"><label for="iv-website">Website</label><input id="iv-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+              <div class="full"><label class="consent"><input type="checkbox" name="marketing_consent" value="yes"><span>Optional: send me occasional updates from Property Link Partners. You can unsubscribe at any time.</span></label></div>
+            </div>
+            <div class="form-foot mt-3">
+              <button class="btn btn-primary" type="submit">Send Buying Criteria</button>
+              <p class="form-privacy">We use this information to contact you about opportunities that may match your criteria. See our <a href="{{base}}privacy/">Privacy Policy</a>.</p>
+            </div>
+            <div class="form-status" data-form-status role="status"></div>
+          </form>
+        </div>
+
+        <p class="fine mt-4"><span aria-hidden="true">*</span> Required fields are marked with an asterisk.</p>
+      </div>
+    </section>
